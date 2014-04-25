@@ -1,5 +1,7 @@
 import random
 
+import agent
+
 PREDEFINED_USER_NAMES = [
     "andy",
     "anna",
@@ -36,6 +38,8 @@ class User(object):
         self.vyatta = None
         self.curr_socket = None
 
+        self.user_agent = None
+
     def gen_app_info(self):
         if not self.org:
             raise Exception("org should be initialized")
@@ -53,11 +57,12 @@ class User(object):
                 'user_id': random.randint(208118596, 308118596)
             }
 
-    def select_socket(self):
+    def select_client(self):
         if not self.org:
             raise Exception("org should be initialized")
 
         curr_vyatta = random.randint(0, len(self.org.vyatta_list) - 1)
         self.vyatta = self.org.vyatta_list[curr_vyatta]
         self.curr_socket = random.choice(self.vyatta['sockets'])
+        self.user_agent = random.choice(agent.user_agent_list)
 

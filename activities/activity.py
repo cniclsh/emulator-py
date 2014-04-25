@@ -65,5 +65,15 @@ class Activity(object):
         record['proto'] = 'TCP'
         record['time_begin'] = self.time_range.str_begin
         record['time_end'] = self.time_range.str_end
+        record['browser'] = {
+                                'family': self.user.user_agent.browser.family,
+                                'version': self.user.user_agent.browser.version_string
+                             }
+        record['os'] = {
+                                'family': self.user.user_agent.os.family,
+                                'version': self.user.user_agent.os.version_string
+                             }
+        record['device'] = self.user.user_agent.device.family
+
         return record
 

@@ -4,7 +4,7 @@ import string
 import activity
 
 from boxactivity import BoxActivity
-
+from users import agent
 
 PREDEFIND_ACTIVITY_LIST = {
     'box' : {
@@ -68,7 +68,7 @@ class HttpSess(object):
         self.settings = settings
 
         self.user = user
-        user.select_socket()
+        user.select_client()
 
         self.app = app
         app.select_socket()
@@ -84,6 +84,8 @@ class HttpSess(object):
         self.n_packet = 0
 
         self.activity_list = self._gen_activity_list(activity_dict)
+
+        self.user_agent = random.choice(agent.user_agent_list)
 
     def _gen_activity_list(self, activity_dict):
         activities = []
