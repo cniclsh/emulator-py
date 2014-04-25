@@ -1,0 +1,122 @@
+
+{
+    "nusers": 10,
+    "n_netrange": 1,
+
+    "norgs": 1,
+
+    "org": {
+        "nemployees": {
+            "min": 3,
+            "max": 10000
+        },
+        "apps": [
+            "box",
+            "dropbox"
+        ]
+    },
+    "user": {
+        "nloc": 5
+
+    },
+    "mail": [
+        "gmail.com",
+        "hotmail.com"
+    ],
+
+    "day" : {
+        "http-sess": {"min":8, "max":16},
+        "activity" : {"min":9, "max":17}
+    },
+
+    "apps": {
+        "box": {
+            "type": "business",
+            "category": "storage",
+            "risklevel": "low",
+            "nips": 30
+        },
+        "dropbox": {
+            "type": "business",
+            "category": "storage",
+            "risklevel": "medium",
+            "nips":60
+        },
+        "google-drive":{
+            "type": "business",
+            "category": "storage",
+            "risklevel": "high",
+            "nips":100
+        },
+        "saleforce": {
+            "type": "business",
+            "category": "crm",
+            "risklevel": "low",
+            "nips":50
+        },
+        "workday": {
+            "type": "business",
+            "category": "hr",
+            "risklevel": "low",
+            "nips":20
+        },
+        "office365": {
+            "type": "business",
+            "category": "office",
+            "risklevel": "low",
+            "nips": 300
+        },
+        "github": {
+            "type": "business",
+            "category": "collaborate",
+            "risklevel":"low",
+            "nips": 5
+        },
+        "skype":{
+            "type":"business",
+            "category":"im",
+            "risklevel":"high",
+            "nips":20
+        },
+        "fackbook":{
+            "type":"business",
+            "category":"social",
+            "risklevel":"high",
+            "nips":40
+        },
+        "poker":{
+            "type":"non-business",
+            "category":"gamboling",
+            "risklevel":"high",
+            "nips":2
+        },
+        "baidu-music":{
+            "type":"non-business",
+            "category":"entertainment",
+            "risklevel":"high",
+            "nips":5
+        },
+        "pplive":{
+            "type":"non-business",
+            "category":"entertainment",
+            "risklevel":"high",
+            "nips": 2
+        },
+        "angry-bird":{
+            "type":"non-business",
+            "category":"game",
+            "risklevel":"high",
+            "nips":5
+        },
+        "uncategoried":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":300
+        }
+    }
+}
+
+
+
+
