@@ -258,6 +258,30 @@
             "risklevel":"high",
             "nips":5
         },
+        "iherb":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "drugstore":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "dangdang":{
+            "type":"business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "guomei":{
+            "type":"business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
         "ct66":{
             "type":"business",
             "category":"e-commerce",
