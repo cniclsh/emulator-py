@@ -42,6 +42,30 @@
             "risklevel": "high",
             "nips": 10
         },
+        "weiyun": {
+            "type": "non-business",
+            "category": "storage",
+            "risklevel": "high",
+            "nips": 1
+        },
+        "baiduyun": {
+            "type": "non-business",
+            "category": "storage",
+            "risklevel": "high",
+            "nips": 1
+        },
+        "icloud": {
+            "type": "non-business",
+            "category": "storage",
+            "risklevel": "high",
+            "nips": 2
+        },
+        "miyun": {
+            "type": "non-business",
+            "category": "storage",
+            "risklevel": "high",
+            "nips": 2
+        },
         "dropbox": {
             "type": "business",
             "category": "storage",
@@ -59,6 +83,30 @@
             "category": "crm",
             "risklevel": "low",
             "nips":50
+        },
+        "concur": {
+            "type": "business",
+            "category": "crm",
+            "risklevel": "low",
+            "nips":2
+        },
+        "jindie": {
+            "type": "business",
+            "category": "crm",
+            "risklevel": "low",
+            "nips":2
+        },
+        "jinsuanpan": {
+            "type": "business",
+            "category": "crm",
+            "risklevel": "low",
+            "nips":2
+        },
+        "inspur": {
+            "type": "non-business",
+            "category": "crm",
+            "risklevel": "low",
+            "nips":2
         },
         "workday": {
             "type": "business",
@@ -78,17 +126,77 @@
             "risklevel":"low",
             "nips": 5
         },
+        "google-code": {
+            "type": "non-business",
+            "category": "collaborate",
+            "risklevel":"low",
+            "nips": 2
+        },
+        "evernote": {
+            "type": "non-business",
+            "category": "collaborate",
+            "risklevel":"low",
+            "nips": 1
+        },
         "skype":{
             "type":"business",
             "category":"im",
             "risklevel":"high",
             "nips":20
         },
-        "fackbook":{
+        "qq":{
+            "type":"non-business",
+            "category":"im",
+            "risklevel":"high",
+            "nips":21
+        },
+        "lync":{
+            "type":"business",
+            "category":"im",
+            "risklevel":"high",
+            "nips":1
+        },
+        "msn":{
+            "type":"non-business",
+            "category":"im",
+            "risklevel":"high",
+            "nips":2
+        },
+        "yahoo-messager":{
+            "type":"non-business",
+            "category":"im",
+            "risklevel":"high",
+            "nips":2
+        },
+        "gtalk":{
+            "type":"non-business",
+            "category":"im",
+            "risklevel":"high",
+            "nips":2
+        },
+        "facebook":{
             "type":"business",
             "category":"social",
             "risklevel":"high",
             "nips":40
+        },
+        "twitter":{
+            "type":"non-business",
+            "category":"social",
+            "risklevel":"high",
+            "nips":4
+        },
+        "kaixin":{
+            "type":"non-business",
+            "category":"social",
+            "risklevel":"high",
+            "nips":4
+        },
+        "renren":{
+            "type":"non-business",
+            "category":"social",
+            "risklevel":"high",
+            "nips":4
         },
         "poker":{
             "type":"non-business",
@@ -114,11 +222,107 @@
             "risklevel":"high",
             "nips":5
         },
-        "uncategoried":{
+        "qqmail":{
+            "type":"business",
+            "category":"mail",
+            "risklevel":"high",
+            "nips":5
+        },
+        "gmail":{
+            "type":"non-business",
+            "category":"mail",
+            "risklevel":"high",
+            "nips":5
+        },
+        "126":{
+            "type":"non-business",
+            "category":"mail",
+            "risklevel":"high",
+            "nips":5
+        },
+        "jd":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "amazon":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "shanpin":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "ct66":{
+            "type":"business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "codeshchool":{
+            "type":"business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "cousera":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "csdn":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "iteye":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "coolshell":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "unknown1":{
             "type":"unknown",
             "category":"unknown",
             "risklevel":"unknown",
-            "nips":300
+            "nips":1
+        },
+        "unknown2":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
+        },
+        "unknown3":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
+        },
+        "unknown4":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
+        },
+        "unknown5":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
         }
     }
 }
