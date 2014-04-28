@@ -36,6 +36,12 @@
             "risklevel": "low",
             "nips": 30
         },
+        "goukuai": {
+            "type": "non-business",
+            "category": "storage",
+            "risklevel": "high",
+            "nips": 10
+        },
         "dropbox": {
             "type": "business",
             "category": "storage",
