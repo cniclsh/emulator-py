@@ -288,7 +288,7 @@
             "risklevel":"high",
             "nips":5
         },
-        "codeshchool":{
+        "codeschool":{
             "type":"business",
             "category":"e-learning",
             "risklevel":"high",
@@ -342,11 +342,11 @@
             "risklevel":"unknown",
             "nips":1
         },
-        "unknown5":{
+        "uncategoried":{
             "type":"unknown",
             "category":"unknown",
             "risklevel":"unknown",
-            "nips":1
+            "nips":100
         }
     }
 }
