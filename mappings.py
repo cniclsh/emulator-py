@@ -18,6 +18,9 @@ gw_mapping = {
             "type" : "string"
           },
           "location": {
+            "type" : "string"
+          },
+          "geo": {
             "type" : "geo_point"
           },
           "proto" : {
@@ -109,5 +112,25 @@ aie_mapping = {
           },
           "vyatta" : {
             "type" : "string"
+          },
+          "os" : {
+            "properties" : {
+              "family" : {
+                "type" : "string"
+              },
+              "version" : {
+                "type" : "string"
+              }
+            }
+          },
+          "browser" : {
+            "properties" : {
+              "family" : {
+                "type" : "string"
+              },
+              "version" : {
+                "type" : "string"
+              }
+            }
           }
         }

@@ -41,8 +41,9 @@ class Activity(object):
         for packet in self.packet_list:
             record = packet.__dict__
             record['enterprise'] = self.user.org.name
-            record['location'] = {"lat": self.user.vyatta['lat'],
-                                  "lon":self.user.vyatta['lng']}
+            record['geo'] = {"lat": self.user.vyatta['lat'],
+                             "lon":self.user.vyatta['lng']}
+            record['location'] = self.user.vyatta['loc']
             record['type'] = self.app.type
             record['category'] = self.app.category
             record['risklevel'] = self.app.risklevel

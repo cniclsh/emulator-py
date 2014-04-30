@@ -14,14 +14,32 @@ PRED_ORG_NAMES = [
     "Amazon"
 ]
 
-PRED_ORG_LOCATIONS = [
-    "New York",
-    'Los Angeles',
-    'Chicago',
-    'Phoenix',
-    'San Diego',
-    'San Jose'
-]
+PRED_ORG_LOCATIONS = {
+    "New York": {
+        "lat": 40.7127,
+        "lng": 74.0059
+    },
+    'Los Angeles' : {
+        "lat": 34.0500,
+        "lng": 118.2500
+    },
+    'Chicago' : {
+        "lat": 41.8819,
+        "lng": 87.6278
+    },
+    'Phoenix': {
+        "lat": 33.4500,
+        "lng": 112.0667
+    },
+    'San Diego': {
+        "lat": 32.7150,
+        "lng": 117.1625
+    },
+    'San Jose': {
+        "lat": 37.3333,
+        "lng": 121.9000
+    }
+}
 
 def emulate_org_list(settings, app_list, number=1):
     orgs = []
@@ -49,6 +67,7 @@ class Org(object):
         #self.departments = department.emulate_department_list(self.ndepartment)
         self.domain = self.name.lower() + ".com"
         self.app_list = {}
+        self.loc = random.sample(PRED_ORG_LOCATIONS.keys(), random.randint(1,3))
 
         " Subscribed apps "
         business_app_list = {}
@@ -72,10 +91,12 @@ class Org(object):
     def _fake_vyatta_list(self):
         vyattas = []
         for i in range(0, self.nvyatta):
+            vyatta_loc = random.choice(self.loc)
             vyatta = {
                 "id": ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10)),
-                "lat": random.uniform(32.3, 62.9),
-                "lng": random.uniform(114.3, 154.9),
+                "lat": PRED_ORG_LOCATIONS[vyatta_loc]['lat'],
+                "lng": PRED_ORG_LOCATIONS[vyatta_loc]['lng'],
+                "loc": vyatta_loc,
                 "sockets": socket.gen_socket_list("private", "client", 200)
             }
             vyattas.append(vyatta)
