@@ -40,6 +40,8 @@ class Activity(object):
         records = []
         for packet in self.packet_list:
             record = packet.__dict__
+            record['@timestamp'] = packet.timestamp
+            del(record['timestamp'])
             record['enterprise'] = self.user.org.name
             record['geo'] = {"lat": self.user.vyatta['lat'],
                              "lon":self.user.vyatta['lng']}

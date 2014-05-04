@@ -38,7 +38,7 @@ gw_mapping = {
           "srcport" : {
             "type" : "long"
           },
-          "datetime" : {
+          "@timestamp" : {
             "type" : "date",
             "format": "yyyy-MM-dd'T'HH:mm:ss"
           },
