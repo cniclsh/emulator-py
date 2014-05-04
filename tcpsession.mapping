@@ -23,8 +23,12 @@
             "type" : "string",
             "index": "not_analyzed"
           },
-          "location": {
+          "geo": {
             "type" : "geo_point"
+          },
+          "location": {
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "proto" : {
             "type" : "string",
