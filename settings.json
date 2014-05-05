@@ -1,22 +1,31 @@
 {
     "debug" : false,
+
     "norgs": 1,
 
     "org": {
+        "nloc" : {
+            "min": 1,
+            "max": 5
+        },
         "nemployees": {
             "min": 1,
             "max": 5
         },
         "napps" : {
-            "min": 1,
-            "max": 3
+            "min": 5,
+            "max": 20
         }
     },
     "user": {
-        "nloc": 5,
+
+        "app_used_pre_day": {
+            "min": 3,
+            "max": 6
+        },
         "napps" : {
-            "min": 1,
-            "max": 2
+            "min": 10,
+            "max": 20
         },
         "mail": [
             "gmail.com",

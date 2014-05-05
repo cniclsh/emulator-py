@@ -62,14 +62,14 @@ def create_es_index(es, timestamp, org, index_types=['gw', 'aie']):
 
         # create empty index
         es.indices.create(index=index_name, body='', ignore=400)
-        es.indices.put_mapping(index=index_name,
-                               doc_type=doc_type,
-                               body={
-                                   doc_type : {
-                                       "properties" : mapping_dict
-                                   }
-                               }
-        )
+        #es.indices.put_mapping(index=index_name,
+        #                       doc_type=doc_type,
+        #                       body={
+        #                           doc_type : {
+        #                               "properties" : mapping_dict
+        #                           }
+        #                       }
+        #)
 
         index_names[index_type] = index_name
 
@@ -82,8 +82,8 @@ class Emulator:
         self.es = Elasticsearch(kdb_server)
 
         " Generate list of Org "
-        self.app_list = app.emulate_app_list(self.settings['apps'])
-        self.org_list = org.emulate_org_list(self.settings, self.app_list, self.settings['norgs'])
+        self.global_app_list = app.emulate_app_list(self.settings['apps'])
+        self.org_list = org.emulate_org_list(self.settings, self.global_app_list, self.settings['norgs'])
 
     """
         gen_org_traffic
@@ -98,11 +98,11 @@ class Emulator:
 
         for user in org.user_list:
 
-            app_name_list = random.sample(user.app_user_info.keys(), random.randint(user.n_personal_app, len(user.app_user_info.keys())))
+            app_name_list = random.sample(user.app_user_info.keys(), random.randint(self.settings['user']['app_used_pre_day']['min'], self.settings['user']['app_used_pre_day']['max']))
             for app_name in app_name_list:
                 n_packet, n_activity, http_sessions = httpsess.emulate_http_sessions(self.settings['sess'],
                                                                user,
-                                                               self.app_list[app_name],
+                                                               self.global_app_list[app_name],
                                                                time_range)
 
                 logger.info("%s: org: %s, user: %s, app: %s, http_sess: %d, activity: %d, packet: %d" % (begin_time, org.name, user.name, app_name, len(http_sessions), n_activity, n_packet))

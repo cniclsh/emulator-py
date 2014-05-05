@@ -64,7 +64,10 @@ class Org(object):
         #self.departments = department.emulate_department_list(self.ndepartment)
         self.domain = self.name.lower() + ".com"
         self.app_list = {}
-        self.loc = random.sample(PRED_ORG_LOCATIONS.keys(), random.randint(1,3))
+
+        self.n_loc = min(random.randint(settings['org']['nloc']['min'], settings['org']['nloc']['max']),
+                         len(PRED_ORG_LOCATIONS.keys()))
+        self.loc = random.sample(PRED_ORG_LOCATIONS.keys(), self.n_loc)
 
         " Subscribed apps "
         business_app_list = {}
@@ -73,7 +76,11 @@ class Org(object):
                 continue
             business_app_list[key] = value
         self.n_apps = random.randint(settings['org']['napps']['min'], settings['org']['napps']['max'])
-        app_name_list = random.sample(business_app_list.keys(), self.n_apps)
+        if self.n_apps >= business_app_list.keys():
+            app_name_list = business_app_list.keys()
+        else:
+            app_name_list = random.sample(business_app_list.keys(), self.n_apps)
+
         for app_name in app_name_list if 'uncategoried' in app_name_list else (app_name_list + ['uncategoried']):
             self.app_list[app_name] = app_list[app_name]
 
@@ -85,7 +92,7 @@ class Org(object):
         self.user_list = user.emulate_user_list(settings, self.app_list, self.nuser)
 
         " Vyatta "
-        self.nvyatta = random.randint(1, 3)
+        self.nvyatta = self.n_loc
         self.vyatta_list = self._fake_vyatta_list()
 
     def _fake_vyatta_list(self):
