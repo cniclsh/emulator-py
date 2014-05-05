@@ -62,14 +62,14 @@ def create_es_index(es, timestamp, org, index_types=['gw', 'aie']):
 
         # create empty index
         es.indices.create(index=index_name, body='', ignore=400)
-        #es.indices.put_mapping(index=index_name,
-        #                       doc_type=doc_type,
-        #                       body={
-        #                           doc_type : {
-        #                               "properties" : mapping_dict
-        #                           }
-        #                       }
-        #)
+        es.indices.put_mapping(index=index_name,
+                               doc_type=doc_type,
+                               body={
+                                   doc_type : {
+                                       "properties" : mapping_dict
+                                   }
+                               }
+        )
 
         index_names[index_type] = index_name
 

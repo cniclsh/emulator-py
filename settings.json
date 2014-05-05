@@ -1,10 +1,5 @@
-
 {
-
     "debug" : false,
-
-    "debug" : false,
-    "n_netrange": 1,
     "norgs": 1,
 
     "org": {
