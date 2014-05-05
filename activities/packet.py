@@ -1,14 +1,13 @@
 
 import random
 
-TCPSESS_MIN_PACKETS = 8
 PACKET_MIN_LENGTH = 52
 PACKET_MAX_LENGTH = 1024
 
 
-def emulate_packet_list(time_range, vyatta, client_socket, server_socket, appname, content_length):
+def emulate_packet_list(settings, time_range, vyatta, client_socket, server_socket, appname, content_length):
     packets = []
-    n_packet = max(TCPSESS_MIN_PACKETS, content_length/PACKET_MAX_LENGTH)
+    n_packet = random.randint(settings['tcp']['min_packet'], settings['tcp']['max_packet'])
     sub_time_range = time_range.split(n_packet)
     for i in range(0, n_packet):
         timestamps = sub_time_range[i].get_points(2)

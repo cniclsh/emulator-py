@@ -11,7 +11,7 @@ def emulate_user_list(settings, official_app_list, nuser=1):
     names = random.sample(PREDEFINED_USER_NAMES, nuser)
 
     for i in range(0, nuser):
-        users.append(User(settings, names[i], official_app_list))
+        users.append(User(settings, names[i]))
 
     return users
 
@@ -22,10 +22,10 @@ def emulate_user_list(settings, official_app_list, nuser=1):
 
 """
 class User(object):
-    def __init__(self, settings, name, official_app_list):
+    def __init__(self, settings, name):
         self.settings = settings
         self.name = name
-        self.n_personal_app = random.randint(0, len(settings['apps']) - len(official_app_list))
+        self.n_personal_app = random.randint(settings['user']['napps']['min'], settings['user']['napps']['max'])
 
         self.app_user_info = {}
 
@@ -50,7 +50,7 @@ class User(object):
         personal_app_list = list(set(self.settings['apps'].keys()) - set(self.org.app_list.keys()))
         for app_name in random.sample(personal_app_list, self.n_personal_app):
             self.app_user_info[app_name] = {
-                'login': self.name + "@" + random.choice(self.settings['mail']),
+                'login': self.name + "@" + random.choice(self.settings['user']['mail']),
                 'user_id': random.randint(208118596, 308118596)
             }
 

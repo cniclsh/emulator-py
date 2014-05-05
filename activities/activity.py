@@ -8,7 +8,7 @@ logger = logging.getLogger('activity')
 
 class Activity(object):
 
-    def __init__(self, time_range, user, app, activity_name, data_length=None):
+    def __init__(self, settings, time_range, user, app, activity_name, data_length=None):
         self.user = user
         self.app = app
         self.activity_name = activity_name
@@ -16,19 +16,20 @@ class Activity(object):
         self.time_range = time_range
         self.data_length = data_length if data_length else random.randint(0, 9999)
 
-        self.packet_list = self._gen_tcpsess().packet_list
+        self.packet_list = self._gen_tcpsess(settings).packet_list
 
-    def _gen_tcpsess(self):
+    def _gen_tcpsess(self, settings):
 
         client_socket = self.user.curr_socket
         server_socket = self.app.socket_list[self.app.curr_socket]
 
-        tcp_sess = tcpsess.TcpSess(self.time_range,
-                               self.user.vyatta,
-                               client_socket,
-                               server_socket,
-                               self.app.name,
-                               self.data_length)
+        tcp_sess = tcpsess.TcpSess(settings,
+                                   self.time_range,
+                                   self.user.vyatta,
+                                   client_socket,
+                                   server_socket,
+                                   self.app.name,
+                                   self.data_length)
 
         logger.info("time: (%s, %s), activity: %s, n_packet %d " % (self.time_range.str_begin,
                                                                     self.time_range.str_end,

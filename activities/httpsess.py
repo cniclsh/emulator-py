@@ -9,26 +9,26 @@ from users import agent
 PREDEFIND_ACTIVITY_LIST = {
     'box' : {
         "user_login": {
-            "data_length": random.randint(1024, 2048)
+            "data_length": random.randint(128, 512)
 
         },
         "upload_file": {
-            "data_length": random.randint(3096, 5120),
+            "data_length": random.randint(128, 512),
             "file": '',
             "parent": ''
         },
         "download_file": {
-            "data_length": random.randint(3096, 5120),
+            "data_length": random.randint(128, 512),
             "file": '',
             "parent": ''
         },
         "share_file": {
-            "data_length": random.randint(1024, 2048),
+            "data_length": random.randint(128, 512),
             "file": '',
             "parent": ''
         },
         "view_file": {
-            "data_length": random.randint(3096, 5120),
+            "data_length": random.randint(128, 512),
             "file": '',
             "parent": ''
         },
@@ -91,13 +91,14 @@ class HttpSess(object):
         activities = []
         if not activity_dict:
             for i in range(self.nactivity):
-                act = activity.Activity(self.time_ranges[i], self.user, self.app, 'unsupported')
+                act = activity.Activity(self.settings, self.time_ranges[i], self.user, self.app, 'unsupported')
                 activities.append(act)
                 self.n_packet += len(act.packet_list)
             return activities
 
         " The first activity should be 'user_login' "
-        act = HttpSess.deep_dive_apps[self.app.name](self.httpsess_id,
+        act = HttpSess.deep_dive_apps[self.app.name](self.settings,
+                                                     self.httpsess_id,
                                                      self.time_ranges[0],
                                                      self.user, self.app,
                                                      'user_login',
@@ -116,7 +117,7 @@ class HttpSess(object):
                                           self.nactivity - 1)
         for activity_key in activity_key_list:
 
-            act = HttpSess.deep_dive_apps[self.app.name](self.httpsess_id,
+            act = HttpSess.deep_dive_apps[self.app.name](self.settings, self.httpsess_id,
                                                          self.time_ranges[activity_key_list.index(activity_key)],
                                                          self.user, self.app,
                                                          activity_key, activity_dict[activity_key])

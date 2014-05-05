@@ -38,10 +38,10 @@ PRED_ORG_LOCATIONS = {
     }
 }
 
-def emulate_org_list(settings, app_list, number=1):
+def emulate_org_list(settings, app_list, norgs=1):
     orgs = []
 
-    for i in range(number):
+    for i in range(norgs):
         org = Org(settings, app_list)
         for user in org.user_list:
             user.org = org
@@ -72,7 +72,7 @@ class Org(object):
             if value.type == 'non-business':
                 continue
             business_app_list[key] = value
-        self.n_apps = random.randint(1, len(business_app_list))
+        self.n_apps = random.randint(settings['org']['napps']['min'], settings['org']['napps']['max'])
         app_name_list = random.sample(business_app_list.keys(), self.n_apps)
         for app_name in app_name_list if 'uncategoried' in app_name_list else (app_name_list + ['uncategoried']):
             self.app_list[app_name] = app_list[app_name]

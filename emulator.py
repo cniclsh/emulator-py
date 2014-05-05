@@ -62,24 +62,22 @@ def create_es_index(es, timestamp, org, index_types=['gw', 'aie']):
 
         # create empty index
         es.indices.create(index=index_name, body='', ignore=400)
-        es.indices.put_mapping(index=index_name,
-                               doc_type=doc_type,
-                               body={
-                                   doc_type : {
-                                       "properties" : mapping_dict
-                                   }
-                               }
-        )
+        #es.indices.put_mapping(index=index_name,
+        #                       doc_type=doc_type,
+        #                       body={
+        #                           doc_type : {
+        #                               "properties" : mapping_dict
+        #                           }
+        #                       }
+        #)
 
         index_names[index_type] = index_name
 
     return index_names
 
 class Emulator:
-    def __init__(self, kdb_server, begin, end, setting_file=SETTING_FILE):
+    def __init__(self, kdb_server, setting_file=SETTING_FILE):
         self.settings = read_setting_from_file(setting_file)
-        self.time_range = timerange.TimeRange(begin, end)
-        self.begin = begin
         self.kdb_server = kdb_server
         self.es = Elasticsearch(kdb_server)
 
@@ -90,22 +88,24 @@ class Emulator:
     """
         gen_org_traffic
     """
-    def gen_org_traffic(self, org):
+    def gen_org_traffic(self, org, begin_time, end_time):
+        time_range = timerange.TimeRange(begin_time, end_time)
+
         logger.info("org: %s, official_app: (%s)" % (org.name, ", ".join(app_name for app_name in org.app_list.keys())))
 
-        index_names = create_es_index(self.es, self.time_range.begin, org)
+        index_names = create_es_index(self.es, time_range.begin, org)
         logger.info("Create indexs: (%s, %s)" % tuple(index_names.values()))
 
         for user in org.user_list:
 
             app_name_list = random.sample(user.app_user_info.keys(), random.randint(user.n_personal_app, len(user.app_user_info.keys())))
             for app_name in app_name_list:
-                n_packet, n_activity, http_sessions = httpsess.emulate_http_sessions(self.settings['day'],
+                n_packet, n_activity, http_sessions = httpsess.emulate_http_sessions(self.settings['sess'],
                                                                user,
                                                                self.app_list[app_name],
-                                                               self.time_range)
+                                                               time_range)
 
-                logger.info("%s: org: %s, user: %s, app: %s, http_sess: %d, activity: %d, packet: %d" % (self.begin, org.name, user.name, app_name, len(http_sessions), n_activity, n_packet))
+                logger.info("%s: org: %s, user: %s, app: %s, http_sess: %d, activity: %d, packet: %d" % (begin_time, org.name, user.name, app_name, len(http_sessions), n_activity, n_packet))
 
                 if self.settings['debug']:
                     continue
@@ -119,9 +119,9 @@ class Emulator:
 
                         [self.es.index(index=index_names['aie'], doc_type='activity', body=json.dumps(app_log)) for app_log in http_session['app']]
 
-    def run(self):
+    def run(self, begin_time, end_time):
         for org in self.org_list:
-            self.gen_org_traffic(org)
+            self.gen_org_traffic(org, begin_time, end_time)
 
 
 if __name__ == '__main__':
@@ -130,7 +130,7 @@ if __name__ == '__main__':
     kdb_server = '127.0.0.1'
 
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hb:e:", ["time_begin=", "time_end="])
+        opts, args = getopt.getopt(sys.argv[1:], "hs:b:e:", ["kdb_server=", "time_begin=", "time_end="])
     except getopt.GetoptError:
         print 'emulator.py -s <elasticsearch_server> -b <time_begin> -e <time_end>'
         sys.exit(2)
@@ -159,12 +159,12 @@ if __name__ == '__main__':
 
     user.PREDEFINED_USER_NAMES = read_predefined_names()
 
+    emulator = Emulator(kdb_server)
+
     while datetime_begin <= datetime_end:
 
-        emulator = Emulator(kdb_server,
-                            datetime_begin.strftime("%Y-%m-%d"),
-                            datetime_begin.strftime("%Y-%m-%d"))
-        emulator.run()
+        emulator.run(datetime_begin.strftime("%Y-%m-%d"),
+                     datetime_begin.strftime("%Y-%m-%d"))
 
         datetime_begin = datetime_begin + timedelta(days=1)
 
