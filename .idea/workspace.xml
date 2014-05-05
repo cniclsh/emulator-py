@@ -12,7 +12,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataGenerator$emulator.coverage" NAME="emulator Coverage Results" MODIFIED="1399279705421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataGenerator$emulator.coverage" NAME="emulator Coverage Results" MODIFIED="1399280423952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataGenerator$tcpsession.coverage" NAME="tcpsession Coverage Results" MODIFIED="1396606938664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataGenerator$file.coverage" NAME="file Coverage Results" MODIFIED="1397817117238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps" />
   </component>
@@ -54,7 +54,16 @@
       <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="52" selection-start="1764" selection-end="1767" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1449">
+            <state line="61" column="0" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0" vertical-offset="1046" max-vertical-offset="1428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/elasticsearch-1.0.1-py2.7.egg/elasticsearch/connection/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="3263" selection-end="3263" vertical-scroll-proportion="0.0" vertical-offset="1466" max-vertical-offset="1848">
               <folding />
             </state>
           </provider>
@@ -72,7 +81,7 @@
       <file leaf-file-name="emulator.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.6632653" vertical-offset="1317" max-vertical-offset="3717">
+            <state line="64" column="8" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.2356021" vertical-offset="1254" max-vertical-offset="3717">
               <folding>
                 <element signature="e#226#246#0" expanded="true" />
               </folding>
@@ -83,7 +92,7 @@
       <file leaf-file-name="httpsess.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="19" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2919">
+            <state line="70" column="20" selection-start="1855" selection-end="1868" vertical-scroll-proportion="0.0" vertical-offset="1147" max-vertical-offset="2919">
               <folding />
             </state>
           </provider>
@@ -119,10 +128,10 @@
         <option value="$PROJECT_DIR$/activities/tcpsess.py" />
         <option value="$PROJECT_DIR$/activities/boxactivity.py" />
         <option value="$PROJECT_DIR$/activities/httpsess.py" />
-        <option value="$PROJECT_DIR$/users/user.py" />
         <option value="$PROJECT_DIR$/activities/packet.py" />
         <option value="$PROJECT_DIR$/settings.json" />
         <option value="$PROJECT_DIR$/users/org.py" />
+        <option value="$PROJECT_DIR$/users/user.py" />
         <option value="$PROJECT_DIR$/emulator.py" />
       </list>
     </option>
@@ -524,8 +533,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24916051" sideWeight="0.73642385" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1766286" sideWeight="0.44385734" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5561427" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1766286" sideWeight="0.5601057" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -548,10 +557,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/users/user.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="84" />
+      <option name="time" value="86" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -602,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/elasticsearch-1.0.1-py2.7.egg/elasticsearch/connection/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="3263" selection-end="3263" vertical-scroll-proportion="0.65822786" vertical-offset="1295" max-vertical-offset="1848">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="240" column="0" selection-start="8984" selection-end="8984" vertical-scroll-proportion="0.0" vertical-offset="4740" max-vertical-offset="19005">
@@ -626,20 +635,6 @@
     <entry file="file://$PROJECT_DIR$/apps/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="21" selection-start="612" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="52" selection-start="1764" selection-end="1767" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1449">
           <folding />
         </state>
       </provider>
@@ -665,9 +660,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="20" selection-start="1855" selection-end="1868" vertical-scroll-proportion="0.0" vertical-offset="1147" max-vertical-offset="2919">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/elasticsearch-1.0.1-py2.7.egg/elasticsearch/connection/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="3263" selection-end="3263" vertical-scroll-proportion="0.0" vertical-offset="1466" max-vertical-offset="1848">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.0" vertical-offset="1046" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/emulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.6632653" vertical-offset="1317" max-vertical-offset="3717">
+        <state line="64" column="8" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.2356021" vertical-offset="1254" max-vertical-offset="3717">
           <folding>
             <element signature="e#226#246#0" expanded="true" />
           </folding>
