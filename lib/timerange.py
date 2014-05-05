@@ -3,6 +3,7 @@ from datetime import datetime
 import random
 from itertools import izip, tee
 
+MIN_TIME_RANGE = 1000 #second
 
 def pairwise(iterable):
     "s -> (s0,s1), (s1,s2), (s2, s3), ..."
@@ -47,7 +48,7 @@ class TimeRange(object):
     """
     def split(self, nsplit=2):
         if nsplit in [0, 1]:
-            return self
+            return [self]
 
         result = []
         collection = range(self.begin, self.end)

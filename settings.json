@@ -1,14 +1,14 @@
 
 {
-    "nusers": 10,
+    "debug" : true,
     "n_netrange": 1,
 
     "norgs": 1,
 
     "org": {
         "nemployees": {
-            "min": 3,
-            "max": 10000
+            "min": 4,
+            "max": 5
         },
         "apps": [
             "box",
@@ -17,7 +17,6 @@
     },
     "user": {
         "nloc": 5
-
     },
     "mail": [
         "gmail.com",
@@ -25,8 +24,8 @@
     ],
 
     "day" : {
-        "http-sess": {"min":8, "max":16},
-        "activity" : {"min":9, "max":17}
+        "http-sess": {"min":2, "max":7},
+        "activity" : {"min":3, "max":9}
     },
 
     "apps": {
@@ -221,126 +220,6 @@
             "category":"game",
             "risklevel":"high",
             "nips":5
-        },
-        "qqmail":{
-            "type":"business",
-            "category":"mail",
-            "risklevel":"high",
-            "nips":5
-        },
-        "gmail":{
-            "type":"non-business",
-            "category":"mail",
-            "risklevel":"high",
-            "nips":5
-        },
-        "126":{
-            "type":"non-business",
-            "category":"mail",
-            "risklevel":"high",
-            "nips":5
-        },
-        "jd":{
-            "type":"non-business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "amazon":{
-            "type":"non-business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "shanpin":{
-            "type":"non-business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "iherb":{
-            "type":"non-business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "drugstore":{
-            "type":"non-business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "dangdang":{
-            "type":"business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "guomei":{
-            "type":"business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "ct66":{
-            "type":"business",
-            "category":"e-commerce",
-            "risklevel":"high",
-            "nips":5
-        },
-        "codeschool":{
-            "type":"business",
-            "category":"e-learning",
-            "risklevel":"high",
-            "nips":5
-        },
-        "cousera":{
-            "type":"non-business",
-            "category":"e-learning",
-            "risklevel":"high",
-            "nips":5
-        },
-        "csdn":{
-            "type":"non-business",
-            "category":"e-learning",
-            "risklevel":"high",
-            "nips":5
-        },
-        "iteye":{
-            "type":"non-business",
-            "category":"e-learning",
-            "risklevel":"high",
-            "nips":5
-        },
-        "coolshell":{
-            "type":"non-business",
-            "category":"e-learning",
-            "risklevel":"high",
-            "nips":5
-        },
-        "unknown1":{
-            "type":"unknown",
-            "category":"unknown",
-            "risklevel":"unknown",
-            "nips":1
-        },
-        "unknown2":{
-            "type":"unknown",
-            "category":"unknown",
-            "risklevel":"unknown",
-            "nips":1
-        },
-        "unknown3":{
-            "type":"unknown",
-            "category":"unknown",
-            "risklevel":"unknown",
-            "nips":1
-        },
-        "unknown4":{
-            "type":"unknown",
-            "category":"unknown",
-            "risklevel":"unknown",
-            "nips":1
         },
         "uncategoried":{
             "type":"unknown",

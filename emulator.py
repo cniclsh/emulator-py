@@ -15,7 +15,7 @@ __author__ = 'cniclsh'
 """
 
 from apps import app
-from users import org
+from users import org, user
 import random
 from activities import httpsess
 from lib import timerange
@@ -34,6 +34,7 @@ import mappings
 
 PROJECT_ROOT = os.getcwd()
 SETTING_FILE = os.path.join(PROJECT_ROOT, "settings.json")
+PREDEFINED_NAME_FILE = os.path.join(PROJECT_ROOT, "users/usernames")
 
 logger = logging.getLogger(__name__)
 
@@ -43,10 +44,16 @@ def read_setting_from_file(file = SETTING_FILE):
 
     return settings
 
-es = Elasticsearch()
+
+def read_predefined_names():
+
+    with open(PREDEFINED_NAME_FILE, 'rb') as fp:
+        names = [ line.rstrip('\n').lower() for line in fp]
+
+    return names
 
 
-def create_es_index(timestamp, org, index_types=['gw', 'aie']):
+def create_es_index(es, timestamp, org, index_types=['gw', 'aie']):
     index_names = {}
     for index_type in index_types:
         index_name = org.name.lower() + '-' + index_type + '-' + datetime.fromtimestamp(timestamp).strftime('%Y.%m')
@@ -69,10 +76,13 @@ def create_es_index(timestamp, org, index_types=['gw', 'aie']):
     return index_names
 
 class Emulator:
-    def __init__(self, begin, end, setting_file=SETTING_FILE):
+    def __init__(self, kdb_server, begin, end, setting_file=SETTING_FILE):
         self.settings = read_setting_from_file(setting_file)
         self.time_range = timerange.TimeRange(begin, end)
         self.begin = begin
+        self.kdb_server = kdb_server
+        self.es = Elasticsearch(kdb_server)
+
         " Generate list of Org "
         self.app_list = app.emulate_app_list(self.settings['apps'])
         self.org_list = org.emulate_org_list(self.settings, self.app_list, self.settings['norgs'])
@@ -83,7 +93,7 @@ class Emulator:
     def gen_org_traffic(self, org):
         logger.info("org: %s, official_app: (%s)" % (org.name, ", ".join(app_name for app_name in org.app_list.keys())))
 
-        index_names = create_es_index(self.time_range.begin, org)
+        index_names = create_es_index(self.es, self.time_range.begin, org)
         logger.info("Create indexs: (%s, %s)" % tuple(index_names.values()))
 
         for user in org.user_list:
@@ -97,14 +107,17 @@ class Emulator:
 
                 logger.info("%s: org: %s, user: %s, app: %s, http_sess: %d, activity: %d, packet: %d" % (self.begin, org.name, user.name, app_name, len(http_sessions), n_activity, n_packet))
 
+                if self.settings['debug']:
+                    continue
+
                 for http_session in http_sessions:
                     if http_session['pkg']:
 
-                        [es.index(index=index_names['gw'], doc_type='tcpsession', body=json.dumps(pkg_log)) for pkg_log in http_session['pkg']]
+                        [self.es.index(index=index_names['gw'], doc_type='tcpsession', body=json.dumps(pkg_log)) for pkg_log in http_session['pkg']]
 
                     if http_session['app']:
 
-                        [es.index(index=index_names['aie'], doc_type='activity', body=json.dumps(app_log)) for app_log in http_session['app']]
+                        [self.es.index(index=index_names['aie'], doc_type='activity', body=json.dumps(app_log)) for app_log in http_session['app']]
 
     def run(self):
         for org in self.org_list:
@@ -114,15 +127,19 @@ class Emulator:
 if __name__ == '__main__':
     time_begin = ''
     time_end = ''
+    kdb_server = '127.0.0.1'
+
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hb:e:", ["time_begin=", "time_end="])
     except getopt.GetoptError:
-        print 'emulator.py -b <time_begin> -e <time_end>'
+        print 'emulator.py -s <elasticsearch_server> -b <time_begin> -e <time_end>'
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print 'emulator.py -b <time_begin> -e <time_end>'
+            print 'emulator.py -s <elasticsearch_server> -b <time_begin> -e <time_end>'
             sys.exit()
+        elif opt in ("-s", "--kdb"):
+            kdb_server = arg
         elif opt in ("-b", "--time_begin"):
             time_begin = arg
         elif opt in ("-e", "--time_end"):
@@ -140,9 +157,12 @@ if __name__ == '__main__':
         print "time_begin < time_end"
         sys.exit(2)
 
+    user.PREDEFINED_USER_NAMES = read_predefined_names()
+
     while datetime_begin <= datetime_end:
 
-        emulator = Emulator(datetime_begin.strftime("%Y-%m-%d"),
+        emulator = Emulator(kdb_server,
+                            datetime_begin.strftime("%Y-%m-%d"),
                             datetime_begin.strftime("%Y-%m-%d"))
         emulator.run()
 
