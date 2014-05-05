@@ -14,27 +14,27 @@ PRED_ORG_NAMES = [
 PRED_ORG_LOCATIONS = {
     "New York": {
         "lat": 40.7127,
-        "lng": 74.0059
+        "lng": -74.0059
     },
     'Los Angeles' : {
         "lat": 34.0500,
-        "lng": 118.2500
+        "lng": -118.2500
     },
     'Chicago' : {
         "lat": 41.8819,
-        "lng": 87.6278
+        "lng": -87.6278
     },
     'Phoenix': {
         "lat": 33.4500,
-        "lng": 112.0667
+        "lng": -112.0667
     },
     'San Diego': {
         "lat": 32.7150,
-        "lng": 117.1625
+        "lng": -117.1625
     },
     'San Jose': {
         "lat": 37.3333,
-        "lng": 121.9000
+        "lng": -121.9000
     }
 }
 

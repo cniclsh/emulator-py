@@ -1,12 +1,15 @@
 gw_mapping = {
           "appname" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "category" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "dir" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "dstip" : {
             "type" : "ip"
@@ -15,19 +18,23 @@ gw_mapping = {
             "type" : "long"
           },
           "enterprise" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "location": {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "geo": {
             "type" : "geo_point"
           },
           "proto" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "risklevel" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "size" : {
             "type" : "long"
@@ -38,24 +45,28 @@ gw_mapping = {
           "srcport" : {
             "type" : "long"
           },
-          "datetime" : {
+          "@timestamp" : {
             "type" : "date",
             "format": "yyyy-MM-dd'T'HH:mm:ss"
           },
           "type" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "vyatta" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           }
       }
 
 aie_mapping = {
           "activity" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "appname" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "dstip" : {
             "type" : "ip"
@@ -67,25 +78,31 @@ aie_mapping = {
             "type" : "long"
           },
           "file_name" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "file_parent" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "file_size" : {
             "type" : "long"
           },
           "file_type" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "http_sess_id" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "login" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "proto" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "size" : {
             "type" : "long"
@@ -111,25 +128,30 @@ aie_mapping = {
             "type" : "long"
           },
           "vyatta" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           },
           "os" : {
             "properties" : {
               "family" : {
-                "type" : "string"
+                "type" : "string",
+                "index": "not_analyzed"
               },
               "version" : {
-                "type" : "string"
+                "type" : "string",
+                "index": "not_analyzed"
               }
             }
           },
           "browser" : {
             "properties" : {
               "family" : {
-                "type" : "string"
+                "type" : "string",
+                "index": "not_analyzed"
               },
               "version" : {
-                "type" : "string"
+                "type" : "string",
+                "index": "not_analyzed"
               }
             }
           }

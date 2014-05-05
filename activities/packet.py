@@ -32,7 +32,7 @@ def emulate_packet_list(time_range, vyatta, client_socket, server_socket, appnam
 
 class Packet(object):
     def __init__(self, timestamp, vyatta, src_ip, src_port, dst_ip, dst_port, appname, direction, length, proto= 'TCP'):
-        self.datetime = timestamp
+        self.timestamp = timestamp
         self.vyatta = vyatta['id']
         self.srcip = src_ip
         self.srcport = src_port

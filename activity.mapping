@@ -2,10 +2,12 @@
       "activity" : {
         "properties" : {
           "activity" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "appname" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "dstip" : {
             "type" : "ip"
@@ -17,25 +19,31 @@
             "type" : "long"
           },
           "file_name" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "file_parent" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "file_size" : {
             "type" : "long"
           },
           "file_type" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "http_sess_id" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "login" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "proto" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyezed"
           },
           "size" : {
             "type" : "long"
@@ -61,7 +69,8 @@
             "type" : "long"
           },
           "vyatta" : {
-            "type" : "string"
+            "type" : "string",
+            "index": "not_analyzed"
           }
         }
       }
