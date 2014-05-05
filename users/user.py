@@ -2,19 +2,16 @@ import random
 
 import agent
 
-PREDEFINED_USER_NAMES = [
-    "andy",
-    "anna",
-    "bob",
-    "cindy"
-]
+PREDEFINED_USER_NAMES = []
 
 
 def emulate_user_list(settings, official_app_list, nuser=1):
     users = []
 
+    names = random.sample(PREDEFINED_USER_NAMES, nuser)
+
     for i in range(0, nuser):
-        users.append(User(settings, official_app_list))
+        users.append(User(settings, names[i], official_app_list))
 
     return users
 
@@ -25,9 +22,9 @@ def emulate_user_list(settings, official_app_list, nuser=1):
 
 """
 class User(object):
-    def __init__(self, settings, official_app_list):
+    def __init__(self, settings, name, official_app_list):
         self.settings = settings
-        self.name = random.choice(PREDEFINED_USER_NAMES)
+        self.name = name
         self.n_personal_app = random.randint(0, len(settings['apps']) - len(official_app_list))
 
         self.app_user_info = {}

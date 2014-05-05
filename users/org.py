@@ -8,10 +8,7 @@ import user
 from lib import socket
 
 PRED_ORG_NAMES = [
-    "Juniper",
-    "Stratusee",
-    "Google",
-    "Amazon"
+    "Juniper"
 ]
 
 PRED_ORG_LOCATIONS = {
@@ -80,8 +77,11 @@ class Org(object):
         for app_name in app_name_list if 'uncategoried' in app_name_list else (app_name_list + ['uncategoried']):
             self.app_list[app_name] = app_list[app_name]
 
+        if 'box' not in self.app_list:
+            self.app_list['box'] = app_list['box']
+
         " Users "
-        self.nuser = random.randint(10, 100)
+        self.nuser = random.randint(settings['org']['nemployees']['min'], settings['org']['nemployees']['max'])
         self.user_list = user.emulate_user_list(settings, self.app_list, self.nuser)
 
         " Vyatta "
