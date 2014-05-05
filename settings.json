@@ -1,6 +1,6 @@
 
 {
-    "debug" : true,
+    "debug" : false,
     "n_netrange": 1,
 
     "norgs": 1,
@@ -220,6 +220,126 @@
             "category":"game",
             "risklevel":"high",
             "nips":5
+        },
+        "qqmail":{
+            "type":"business",
+            "category":"mail",
+            "risklevel":"high",
+            "nips":5
+        },
+        "gmail":{
+            "type":"non-business",
+            "category":"mail",
+            "risklevel":"high",
+            "nips":5
+        },
+        "126":{
+            "type":"non-business",
+            "category":"mail",
+            "risklevel":"high",
+            "nips":5
+        },
+        "jd":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "amazon":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "shanpin":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "iherb":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "drugstore":{
+            "type":"non-business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "dangdang":{
+            "type":"business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "guomei":{
+            "type":"business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "ct66":{
+            "type":"business",
+            "category":"e-commerce",
+            "risklevel":"high",
+            "nips":5
+        },
+        "codeschool":{
+            "type":"business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "cousera":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "csdn":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "iteye":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "coolshell":{
+            "type":"non-business",
+            "category":"e-learning",
+            "risklevel":"high",
+            "nips":5
+        },
+        "unknown1":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
+        },
+        "unknown2":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
+        },
+        "unknown3":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
+        },
+        "unknown4":{
+            "type":"unknown",
+            "category":"unknown",
+            "risklevel":"unknown",
+            "nips":1
         },
         "uncategoried":{
             "type":"unknown",
