@@ -33,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="30" selection-start="819" selection-end="819" vertical-scroll-proportion="-4.9" vertical-offset="819" max-vertical-offset="8064">
+            <state line="35" column="19" selection-start="607" selection-end="608" vertical-scroll-proportion="-1.1754917" vertical-offset="1512" max-vertical-offset="8064">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activity.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities/activity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="22" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.55899704" vertical-offset="713" max-vertical-offset="1890">
+            <state line="56" column="22" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0" vertical-offset="713" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
@@ -123,9 +123,9 @@
         <option value="$PROJECT_DIR$/users/org.py" />
         <option value="$PROJECT_DIR$/users/user.py" />
         <option value="$PROJECT_DIR$/apps/file.py" />
-        <option value="$PROJECT_DIR$/settings.json" />
         <option value="$PROJECT_DIR$/apps/resource.py" />
         <option value="$PROJECT_DIR$/activities/activity.py" />
+        <option value="$PROJECT_DIR$/settings.json" />
       </list>
     </option>
   </component>
@@ -659,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="30" selection-start="819" selection-end="819" vertical-scroll-proportion="-4.9" vertical-offset="819" max-vertical-offset="8064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="18" selection-start="8448" selection-end="8462" vertical-scroll-proportion="-22.037037" vertical-offset="5411" max-vertical-offset="7707">
@@ -684,7 +677,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/activities/activity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="22" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.55899704" vertical-offset="713" max-vertical-offset="1890">
+        <state line="56" column="22" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0" vertical-offset="713" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="607" selection-end="608" vertical-scroll-proportion="-1.1754917" vertical-offset="1512" max-vertical-offset="8064">
           <folding />
         </state>
       </provider>
