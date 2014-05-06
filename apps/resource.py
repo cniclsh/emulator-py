@@ -5,6 +5,11 @@ class Resource(object):
     resources = {
                     "box" : boxfile.gen_predefined_resource,
                     "dropbox" : file.gen_predefined_resource,
+                    "goukuai" : boxfile.gen_predefined_resource,
+                    "weiyun" : file.gen_predefined_resource,
+                    "baiduyun" : boxfile.gen_predefined_resource,
+                    "icloud" : file.gen_predefined_resource,
+                    "google-drive" : file.gen_predefined_resource,
                 }
 
     def __init__(self, app_name):

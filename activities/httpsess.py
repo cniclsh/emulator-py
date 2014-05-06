@@ -8,7 +8,7 @@ from storageactivity import StorageActivity
 from users import agent
 
 PREDEFIND_ACTIVITY_LIST = {
-    'dropbox' : {
+    'box' : {
         "user_login": {
             "data_length": random.randint(128, 512),
             "result": {"success":8, "failure":2},
@@ -38,6 +38,223 @@ PREDEFIND_ACTIVITY_LIST = {
             "result": {"success":99, "failure":1},
         },
     },
+    'dropbox' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":8, "failure":2},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    },
+    'goukuai' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":8, "failure":2},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    },
+    'weiyun' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":8, "failure":2},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    },
+    'baiduyun' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":8, "failure":2},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    },
+    'icloud' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":99, "failure":1},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    },
+    'miyun' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":99, "failure":1},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    },
+    'google-drive' : {
+        "user_login": {
+            "data_length": random.randint(128, 512),
+            "result": {"success":99, "failure":1},
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": '',
+            "result": {"success":99, "failure":1},
+        }
+    }
 }
 
 
@@ -67,7 +284,7 @@ def emulate_http_sessions(settings, user, app, time_range):
 
 """
 class HttpSess(object):
-    deep_dive_apps = {'box': BoxActivity, 'dropbox': StorageActivity}
+    deep_dive_apps = {'box': BoxActivity, 'dropbox': StorageActivity, "goukuai": StorageActivity, "weiyun":StorageActivity, "baiduyun":StorageActivity, "miyun":StorageActivity, "icloud": StorageActivity, "google-drive":StorageActivity}
 
     def __init__(self, settings, user, app, time_range):
         self.settings = settings

@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activity.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities/activity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="56" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38181818" vertical-offset="0" max-vertical-offset="1848">
+            <state line="17" column="56" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1848">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="resource.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/resource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+            <state line="11" column="25" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpsess.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="httpsess.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="19" selection-start="857" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="3150">
+            <state line="177" column="52" selection-start="5211" selection-end="5211" vertical-scroll-proportion="0.765035" vertical-offset="3170" max-vertical-offset="7707">
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -105,7 +105,7 @@
       <file leaf-file-name="boxactivity.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities/boxactivity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2100">
+            <state line="60" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2100">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -116,7 +116,7 @@
       <file leaf-file-name="boxfile.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/boxfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="1951" max-vertical-offset="3990">
+            <state line="37" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3990">
               <folding>
                 <element signature="e#866#879#0" expanded="true" />
               </folding>
@@ -141,7 +141,6 @@
         <option value="$PROJECT_DIR$/activities/packet.py" />
         <option value="$PROJECT_DIR$/users/user.py" />
         <option value="$PROJECT_DIR$/emulator.py" />
-        <option value="$PROJECT_DIR$/apps/resource.py" />
         <option value="$PROJECT_DIR$/apps/boxfile.py" />
         <option value="$PROJECT_DIR$/apps/file.py" />
         <option value="$PROJECT_DIR$/users/org.py" />
@@ -150,6 +149,7 @@
         <option value="$PROJECT_DIR$/activities/storageactivity.py" />
         <option value="$PROJECT_DIR$/activities/boxactivity.py" />
         <option value="$PROJECT_DIR$/activities/activity.py" />
+        <option value="$PROJECT_DIR$/apps/resource.py" />
       </list>
     </option>
   </component>
@@ -556,7 +556,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -595,13 +595,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mappings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="68" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="2716" max-vertical-offset="3444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/elasticsearch-1.0.1-py2.7.egg/elasticsearch/connection/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="0" selection-start="3263" selection-end="3263" vertical-scroll-proportion="0.0" vertical-offset="1466" max-vertical-offset="1848">
@@ -639,6 +632,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python2.7/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="319" column="0" selection-start="12430" selection-end="12430" vertical-scroll-proportion="0.0" vertical-offset="6432" max-vertical-offset="19005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/storageactivity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="103" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1995">
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/httpsess.py.orig">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.040724" vertical-offset="2016" max-vertical-offset="7098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/boxactivity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2100">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/users/org.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="0" selection-start="2170" selection-end="2170" vertical-scroll-proportion="-9.555555" vertical-offset="1422" max-vertical-offset="2373">
@@ -646,9 +674,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python2.7/random.py">
+    <entry file="file://$PROJECT_DIR$/emulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="319" column="0" selection-start="12430" selection-end="12430" vertical-scroll-proportion="0.0" vertical-offset="6432" max-vertical-offset="19005">
+        <state line="100" column="0" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="3381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/activity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="56" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1848">
           <folding />
         </state>
       </provider>
@@ -669,53 +713,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="3381">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/resource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="19" selection-start="857" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="3150">
+        <state line="177" column="52" selection-start="5211" selection-end="5211" vertical-scroll-proportion="0.765035" vertical-offset="3170" max-vertical-offset="7707">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activities/boxactivity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2100">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activities/storageactivity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="103" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1995">
-          <folding>
-            <element signature="e#1#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activities/activity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="441" selection-end="441" vertical-scroll-proportion="0.38181818" vertical-offset="0" max-vertical-offset="1848">
-          <folding />
         </state>
       </provider>
     </entry>
