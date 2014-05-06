@@ -1,5 +1,5 @@
 {
-    "debug" : false,
+    "debug" : true,
 
     "norgs": 1,
 
@@ -17,12 +17,12 @@
             "max": 3
         },
         "nemployees": {
-            "min": 1,
-            "max": 3
+            "min": 10,
+            "max": 30
         },
         "napps" : {
-            "min": 0,
-            "max": 1
+            "min": 5,
+            "max": 10
         }
     },
     "user": {
@@ -33,8 +33,8 @@
             "max": 2
         },
         "napps" : {
-            "min": 1,
-            "max": 2
+            "min": 5,
+            "max": 10
         },
         "mail": [
             "gmail.com",
@@ -43,8 +43,8 @@
     },
 
     "sess" : {
-        "http-sess": {"min":1, "max":2},
-        "activity" : {"min":1, "max":2},
+        "http-sess": {"min":10, "max":20},
+        "activity" : {"min":10, "max":20},
         "tcp": {
             "min_packet": 1,
             "max_packet": 5

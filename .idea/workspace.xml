@@ -12,7 +12,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataGenerator$emulator.coverage" NAME="emulator Coverage Results" MODIFIED="1399371609441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataGenerator$emulator.coverage" NAME="emulator Coverage Results" MODIFIED="1399372266507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataGenerator$tcpsession.coverage" NAME="tcpsession Coverage Results" MODIFIED="1396606938664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataGenerator$file.coverage" NAME="file Coverage Results" MODIFIED="1397817117238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps" />
   </component>
@@ -33,19 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="department.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/department.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="19" selection-start="16" selection-end="21" vertical-scroll-proportion="0.06818182" vertical-offset="0" max-vertical-offset="8064">
+            <state line="46" column="30" selection-start="819" selection-end="819" vertical-scroll-proportion="-4.9" vertical-offset="819" max-vertical-offset="8064">
               <folding />
             </state>
           </provider>
@@ -65,7 +56,7 @@
       <file leaf-file-name="org.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/org.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="0" selection-start="3472" selection-end="3472" vertical-scroll-proportion="-6.3703704" vertical-offset="2222" max-vertical-offset="2520">
+            <state line="120" column="0" selection-start="3472" selection-end="3472" vertical-scroll-proportion="-19.444445" vertical-offset="1869" max-vertical-offset="2520">
               <folding />
             </state>
           </provider>
@@ -74,25 +65,7 @@
       <file leaf-file-name="file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="1698" max-vertical-offset="2814">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="boxfile.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/boxfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="38" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.0" vertical-offset="2657" max-vertical-offset="3948">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="storageactivity.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activities/storageactivity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="919" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="1974">
+            <state line="88" column="34" selection-start="2220" selection-end="2220" vertical-scroll-proportion="0.0" vertical-offset="1391" max-vertical-offset="2814">
               <folding />
             </state>
           </provider>
@@ -101,16 +74,27 @@
       <file leaf-file-name="httpsess.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="353" column="36" selection-start="11372" selection-end="11372" vertical-scroll-proportion="0.0" vertical-offset="6845" max-vertical-offset="7560">
+            <state line="286" column="18" selection-start="8448" selection-end="8462" vertical-scroll-proportion="-22.037037" vertical-offset="5411" max-vertical-offset="7707">
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resource.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/resource.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="17" selection-start="590" selection-end="590" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="588">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/activities/activity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="43" selection-start="2379" selection-end="2379" vertical-scroll-proportion="0.0" vertical-offset="1154" max-vertical-offset="1890">
+            <state line="56" column="22" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.55899704" vertical-offset="713" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
@@ -134,14 +118,14 @@
         <option value="$PROJECT_DIR$/activities/httpsess.py" />
         <option value="$PROJECT_DIR$/activities/storageactivity.py" />
         <option value="$PROJECT_DIR$/activities/boxactivity.py" />
-        <option value="$PROJECT_DIR$/apps/resource.py" />
         <option value="$PROJECT_DIR$/activities/tcpsess.py" />
         <option value="$PROJECT_DIR$/users/department.py" />
         <option value="$PROJECT_DIR$/users/org.py" />
-        <option value="$PROJECT_DIR$/activities/activity.py" />
         <option value="$PROJECT_DIR$/users/user.py" />
         <option value="$PROJECT_DIR$/apps/file.py" />
         <option value="$PROJECT_DIR$/settings.json" />
+        <option value="$PROJECT_DIR$/apps/resource.py" />
+        <option value="$PROJECT_DIR$/activities/activity.py" />
       </list>
     </option>
   </component>
@@ -556,8 +540,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.87582564" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24916051" sideWeight="0.73642385" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17931497" sideWeight="0.48480844" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51519156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17931497" sideWeight="0.9511229" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.048877146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -587,28 +571,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/activities/boxactivity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2647" selection-end="2647" vertical-scroll-proportion="-0.17482518" vertical-offset="1385" max-vertical-offset="2100">
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emulator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="0" selection-start="2798" selection-end="2798" vertical-scroll-proportion="0.16783217" vertical-offset="1644" max-vertical-offset="3381">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/resource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="471" selection-end="471" vertical-scroll-proportion="0.31730768" vertical-offset="0" max-vertical-offset="728">
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activities/activity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="43" selection-start="2379" selection-end="2379" vertical-scroll-proportion="0.0" vertical-offset="1154" max-vertical-offset="1890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/department.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -654,10 +613,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
+    <entry file="file://$PROJECT_DIR$/apps/boxfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="353" column="36" selection-start="11372" selection-end="11372" vertical-scroll-proportion="0.0" vertical-offset="6845" max-vertical-offset="7560">
+        <state line="138" column="38" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.29351032" vertical-offset="2657" max-vertical-offset="3948">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/storageactivity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="28" selection-start="2339" selection-end="2349" vertical-scroll-proportion="1.5486726" vertical-offset="0" max-vertical-offset="1974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="34" selection-start="2220" selection-end="2220" vertical-scroll-proportion="0.0" vertical-offset="1391" max-vertical-offset="2814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="38" selection-start="589" selection-end="589" vertical-scroll-proportion="0.6685962" vertical-offset="0" max-vertical-offset="735">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -672,35 +654,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/org.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="3472" selection-end="3472" vertical-scroll-proportion="-6.3703704" vertical-offset="2222" max-vertical-offset="2520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activities/storageactivity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="919" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="1974">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/boxfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="38" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.0" vertical-offset="2657" max-vertical-offset="3948">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0" vertical-offset="1698" max-vertical-offset="2814">
+        <state line="120" column="0" selection-start="3472" selection-end="3472" vertical-scroll-proportion="-19.444445" vertical-offset="1869" max-vertical-offset="2520">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="16" selection-end="21" vertical-scroll-proportion="0.06818182" vertical-offset="0" max-vertical-offset="8064">
+        <state line="46" column="30" selection-start="819" selection-end="819" vertical-scroll-proportion="-4.9" vertical-offset="819" max-vertical-offset="8064">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/httpsess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="286" column="18" selection-start="8448" selection-end="8462" vertical-scroll-proportion="-22.037037" vertical-offset="5411" max-vertical-offset="7707">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="590" selection-end="590" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/activity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="22" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.55899704" vertical-offset="713" max-vertical-offset="1890">
           <folding />
         </state>
       </provider>

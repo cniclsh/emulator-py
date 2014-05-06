@@ -10,6 +10,7 @@ class Resource(object):
                     "baiduyun" : boxfile.gen_predefined_resource,
                     "icloud" : file.gen_predefined_resource,
                     "google-drive" : file.gen_predefined_resource,
+                    "miyun" : file.gen_predefined_resource,
                 }
 
     def __init__(self, app_name):

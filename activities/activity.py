@@ -51,7 +51,7 @@ class Activity(object):
             record['type'] = self.app.type
             record['category'] = self.app.category
             record['risklevel'] = self.app.risklevel
-            record['depart'] = self.user.depart
+            record['department'] = self.user.depart
 
             records.append(record)
         return records
@@ -61,7 +61,7 @@ class Activity(object):
 
         client_socket = self.user.curr_socket
         server_socket = self.app.socket_list[self.app.curr_socket]
-        record['depart'] = self.user.depart
+        record['department'] = self.user.depart
         record['vyatta'] = self.user.vyatta['id']
         record['srcip'] = client_socket.ipaddr
         record['srcport'] = client_socket.port
