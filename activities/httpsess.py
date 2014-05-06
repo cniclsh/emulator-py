@@ -31,7 +31,189 @@ PREDEFIND_ACTIVITY_LIST = {
             "data_length": random.randint(128, 512),
             "file": '',
             "parent": ''
+        }
+    },
+    'dropbox' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
         },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
+    },
+    'goukuai' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
+    },
+    'weiyun' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
+    },
+    'baiduyun' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
+    },
+    'icloud' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
+    },
+    'miyun' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
+    },
+    'google-drive' : {
+        "user_login": {
+            "data_length": random.randint(128, 512)
+
+        },
+        "upload_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "download_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "share_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        },
+        "view_file": {
+            "data_length": random.randint(128, 512),
+            "file": '',
+            "parent": ''
+        }
     }
 }
 
