@@ -1,8 +1,11 @@
 import boxfile
-
+import file
 
 class Resource(object):
-    resources = {"box" : boxfile.gen_predefined_resource}
+    resources = {
+                    "box" : boxfile.gen_predefined_resource,
+                    "dropbox" : file.gen_predefined_resource,
+                }
 
     def __init__(self, app_name):
         self.app_name = app_name

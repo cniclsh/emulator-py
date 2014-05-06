@@ -4,35 +4,40 @@ import string
 import activity
 
 from boxactivity import BoxActivity
+from storageactivity import StorageActivity
 from users import agent
 
 PREDEFIND_ACTIVITY_LIST = {
-    'box' : {
+    'dropbox' : {
         "user_login": {
-            "data_length": random.randint(128, 512)
-
+            "data_length": random.randint(128, 512),
+            "result": {"success":8, "failure":2},
         },
         "upload_file": {
             "data_length": random.randint(128, 512),
             "file": '',
-            "parent": ''
+            "parent": '',
+            "result": {"success":99, "failure":1},
         },
         "download_file": {
             "data_length": random.randint(128, 512),
             "file": '',
-            "parent": ''
+            "parent": '',
+            "result": {"success":99, "failure":1},
         },
         "share_file": {
             "data_length": random.randint(128, 512),
             "file": '',
-            "parent": ''
+            "parent": '',
+            "result": {"success":99, "failure":1},
         },
         "view_file": {
             "data_length": random.randint(128, 512),
             "file": '',
-            "parent": ''
+            "parent": '',
+            "result": {"success":99, "failure":1},
         },
-    }
+    },
 }
 
 
@@ -62,7 +67,7 @@ def emulate_http_sessions(settings, user, app, time_range):
 
 """
 class HttpSess(object):
-    deep_dive_apps = {'box': BoxActivity}
+    deep_dive_apps = {'box': BoxActivity, 'dropbox': StorageActivity}
 
     def __init__(self, settings, user, app, time_range):
         self.settings = settings

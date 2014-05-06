@@ -36,8 +36,6 @@ import random
 import datetime
 import time
 
-import app
-
 BASE_TIMESTATMP = datetime.datetime(2013, 7, 21, 3, 13, 22, 259901)
 
 BOX_FILE_TEMPLATE = {

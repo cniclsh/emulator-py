@@ -65,9 +65,9 @@ class Org(object):
         self.domain = self.name.lower() + ".com"
         self.app_list = {}
 
-        self.n_loc = min(random.randint(settings['org']['nloc']['min'], settings['org']['nloc']['max']),
+        n_loc = min(random.randint(settings['org']['nloc']['min'], settings['org']['nloc']['max']),
                          len(PRED_ORG_LOCATIONS.keys()))
-        self.loc = random.sample(PRED_ORG_LOCATIONS.keys(), self.n_loc)
+        self.loc = random.sample(PRED_ORG_LOCATIONS.keys(), n_loc)
 
         " Subscribed apps "
         business_app_list = {}
@@ -75,24 +75,26 @@ class Org(object):
             if value.type == 'non-business':
                 continue
             business_app_list[key] = value
-        self.n_apps = random.randint(settings['org']['napps']['min'], settings['org']['napps']['max'])
-        if self.n_apps >= business_app_list.keys():
+
+        for app in settings['org']['must_apps']:
+            self.app_list[app] = app_list[app]
+
+        n_apps = random.randint(settings['org']['napps']['min'], settings['org']['napps']['max'])
+        if n_apps >= business_app_list.keys():
             app_name_list = business_app_list.keys()
         else:
-            app_name_list = random.sample(business_app_list.keys(), self.n_apps)
+            app_name_list = random.sample(business_app_list.keys(), n_apps)
 
         for app_name in app_name_list if 'uncategoried' in app_name_list else (app_name_list + ['uncategoried']):
             self.app_list[app_name] = app_list[app_name]
 
-        if 'box' not in self.app_list:
-            self.app_list['box'] = app_list['box']
 
         " Users "
         self.nuser = random.randint(settings['org']['nemployees']['min'], settings['org']['nemployees']['max'])
         self.user_list = user.emulate_user_list(settings, self.app_list, self.nuser)
 
         " Vyatta "
-        self.nvyatta = self.n_loc
+        self.nvyatta = n_loc
         self.vyatta_list = self._fake_vyatta_list()
 
     def _fake_vyatta_list(self):

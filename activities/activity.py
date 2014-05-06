@@ -8,13 +8,14 @@ logger = logging.getLogger('activity')
 
 class Activity(object):
 
-    def __init__(self, settings, time_range, user, app, activity_name, data_length=None):
+    def __init__(self, settings, time_range, user, app, activity_name, activity_setting=None):
         self.user = user
         self.app = app
         self.activity_name = activity_name
 
         self.time_range = time_range
-        self.data_length = data_length if data_length else random.randint(0, 9999)
+        self.activity_setting = activity_setting
+        self.data_length = activity_setting['data_length'] if activity_setting else random.randint(0, 9999)
 
         self.packet_list = self._gen_tcpsess(settings).packet_list
 
@@ -78,6 +79,8 @@ class Activity(object):
                                 'version': self.user.user_agent.os.version_string
                              }
         record['device'] = self.user.user_agent.device.family
+
+        record['success'] = random.choice([False] * self.activity_setting['result']['failure'] + [True] * self.activity_setting['result']['success'])
 
         return record
 
