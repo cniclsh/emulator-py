@@ -92,7 +92,7 @@ def emulate_file_list(nfile=1):
     return files
 
 class File(object):
-    def __init__(self, template):
+    def __init__(self, template=FILE_TEMPLATE):
         """Convert a dictionary to a class
 
         @param :template Dictionary
