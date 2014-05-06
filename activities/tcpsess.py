@@ -1,26 +1,6 @@
 
 import packet
 
-
-PacketLogTemp = '{ \
-"@timestamp":"%s", \
-"vyatta": "%s", \
-"dir": "%s", \
-"srcip": "%s", \
-"srcport": %d, \
-"dstip": "%s", \
-"dstport": %d, \
-"appname": "%s", \
-"proto": "TCP", \
-"size": %d, \
-"enterprise": "%s", \
-"location": "%s", \
-"risklevel": "%s", \
-"type": "%s", \
-"category": "%s" \
-}'
-
-
 class TcpSess(object):
     def __init__(self, settings, time_range, vyatta, client_socket, server_socket, appname, content_length):
         self.vyatta = vyatta

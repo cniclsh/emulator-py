@@ -5,13 +5,14 @@ import agent
 PREDEFINED_USER_NAMES = []
 
 
-def emulate_user_list(settings, official_app_list, nuser=1):
+def emulate_user_list(settings, departments, nuser=1):
     users = []
 
     names = random.sample(PREDEFINED_USER_NAMES, nuser)
 
     for i in range(0, nuser):
-        users.append(User(settings, names[i]))
+        department = random.choice(departments) if departments else 'NA'
+        users.append(User(settings, department, names[i]))
 
     return users
 
@@ -22,12 +23,14 @@ def emulate_user_list(settings, official_app_list, nuser=1):
 
 """
 class User(object):
-    def __init__(self, settings, name):
+    def __init__(self, settings, depart, name):
         self.settings = settings
         self.name = name
         self.n_personal_app = random.randint(settings['user']['napps']['min'], settings['user']['napps']['max'])
 
         self.app_user_info = {}
+
+        self.depart = depart
 
         self.org = None
 

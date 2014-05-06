@@ -10,7 +10,6 @@ def emulate_department_list(ndepart):
     return departs
 
 
-
 class Department(object):
     def __init__(self):
         pass

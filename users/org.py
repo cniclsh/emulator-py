@@ -11,6 +11,8 @@ PRED_ORG_NAMES = [
     "Juniper"
 ]
 
+PRED_ORG_DEPARTMENTS = ['hr', 'dev', 'qa', 'marketing', 'sale', 'finance']
+
 PRED_ORG_LOCATIONS = {
     "New York": {
         "lat": 40.7127,
@@ -60,8 +62,10 @@ class Org(object):
     def __init__(self, settings, app_list):
         self.settings = settings
         self.name = random.choice(PRED_ORG_NAMES)
-        self.ndepartment = random.randint(3, 10)
-        #self.departments = department.emulate_department_list(self.ndepartment)
+
+        ndepartment = random.randint(settings['org']['ndepart']['min'], settings['org']['ndepart']['max'])
+        self.departments = random.sample(PRED_ORG_DEPARTMENTS, ndepartment)
+
         self.domain = self.name.lower() + ".com"
         self.app_list = {}
 
@@ -91,7 +95,10 @@ class Org(object):
 
         " Users "
         self.nuser = random.randint(settings['org']['nemployees']['min'], settings['org']['nemployees']['max'])
-        self.user_list = user.emulate_user_list(settings, self.app_list, self.nuser)
+
+        self.user_list = user.emulate_user_list(settings,
+                                                self.departments,
+                                                self.nuser)
 
         " Vyatta "
         self.nvyatta = n_loc

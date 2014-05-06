@@ -5,11 +5,16 @@
 
     "org": {
         "must_apps": [
-            "dropbox"
+            "dropbox",
+            "box"
         ],
         "nloc" : {
             "min": 3,
             "max": 5
+        },
+        "ndepart": {
+            "min": 1,
+            "max": 3
         },
         "nemployees": {
             "min": 1,
