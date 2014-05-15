@@ -113,6 +113,10 @@ aie_mapping = {
           "srcport" : {
             "type" : "long"
           },
+          "location": {
+            "type" : "string",
+            "index": "not_analyzed"
+          },
           "success" : {
             "type" : "boolean"
           },

@@ -84,6 +84,7 @@ class StorageActivity(object):
                   'view_file': ViewFile}
 
     def __new__(kcls, settings, http_session_id, time_range, user, app, activity_name, activity_setting):
+
         return StorageActivity.activities[activity_name](settings, http_session_id, time_range, user, app, activity_name, activity_setting)
 
 

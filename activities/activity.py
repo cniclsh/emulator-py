@@ -4,6 +4,8 @@ import tcpsess
 
 import logging
 
+from users import org
+
 logger = logging.getLogger('activity')
 
 class Activity(object):
@@ -62,6 +64,7 @@ class Activity(object):
         client_socket = self.user.curr_socket
         server_socket = self.app.socket_list[self.app.curr_socket]
         record['department'] = self.user.depart
+        record['location'] = random.sample(org.PRED_ORG_LOCATIONS.keys(), 1)
         record['vyatta'] = self.user.vyatta['id']
         record['srcip'] = client_socket.ipaddr
         record['srcport'] = client_socket.port
